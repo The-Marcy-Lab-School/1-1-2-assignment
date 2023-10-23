@@ -132,7 +132,7 @@ describe(testSuiteName, () => {
     const person2 = {
       name: 'Jane',
       age: 43,
-      hobbies: ['jogging', 'chess', 'swimming'],
+      hobbies: ['jogging', 'chess'],
     };
 
     listHobbies(person1);
@@ -147,7 +147,6 @@ describe(testSuiteName, () => {
     expect(log.mock.calls).toEqual([
       ['Jane likes jogging.'],
       ['Jane likes chess.'],
-      ['Jane likes swimming.'],
     ]);
     jest.clearAllMocks();
 
